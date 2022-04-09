@@ -198,13 +198,6 @@ body {
 
 /*Animaciones en Catalogo*/
 
-@keyframes animacion-productos {
-    100% {
-        filter: opacity(.5);
-        width: 90%;
-    }
-}
-
 .catalogo__prod img:hover {
     transform: scale(0.9);
     filter: opacity(0.7);
