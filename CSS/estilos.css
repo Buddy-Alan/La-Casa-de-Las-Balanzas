@@ -51,6 +51,7 @@ body {
 
 .header__menu ul li {
     padding-top: 2px;
+    padding-right: 5px;
 }
 
 .header__menu ul li a {
@@ -225,7 +226,8 @@ body {
 
 .main__presentacion {
     width: 100%;
-    background-color: lightgray;
+    background-image: url(../Imagenes/Fondo.jpeg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,7 +238,7 @@ body {
 /*Parrafo de la presentacion*/
 
 .main__presentacion p {
-    font-size: 250%;
+    font-size: 200%;
     text-align: center;
     padding-top: 30px;
     width: 80%;
@@ -245,9 +247,17 @@ body {
 
 /*Imagen de la presentacion*/
 
+@keyframes imgPresentacion {
+    0% {
+        width: 30%;
+    }
+}
+
 .main__presentacion img {
     padding-top: 20px;
-    width: 70%;
+    width: 60%;
+    animation-name: imgPresentacion;
+    animation-duration: 3s;
 }
 
 
@@ -506,6 +516,9 @@ textarea {
     .home {
         font-size: 175%;
     }
+    .main__presentacion p {
+        font-size: 135%;
+    }
 }
 
 @media only screen and (max-width: 999px) {
@@ -551,6 +564,9 @@ textarea {
         height: 350px;
         justify-self: center;
     }
+    .main__presentacion p {
+        font-size: 125%;
+    }
 }
 
 @media only screen and (max-width: 799px) {
@@ -567,7 +583,7 @@ textarea {
         overflow: none;
     }
     .catalogo__prod h4 {
-        font-size: 120%;
+        font-size: 115%;
     }
     .header__menu ul li a:hover {
         color: black;
@@ -613,6 +629,13 @@ textarea {
         width: 400px;
         height: 250px;
         justify-self: center;
+    }
+    .main__presentacion p {
+        font-size: 110%;
+        padding-top: 10px;
+    }
+    .main_presentacion img {
+        width: 50%;
     }
 }
 
@@ -678,6 +701,10 @@ textarea {
     .ubi__mapa {
         width: 400px;
     }
+    .main__presentacion p {
+        font-size: 100%;
+        padding-top: 7px;
+    }
 }
 
 
@@ -722,6 +749,10 @@ textarea {
     }
     .ubi__nos p {
         font-size: 75%;
+    }
+    .main__presentacion p {
+        font-size: 90%;
+        padding-top: 5px;
     }
 }
 
