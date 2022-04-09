@@ -180,6 +180,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
 
 .catalogo__prod img {
@@ -190,8 +191,24 @@ body {
 
 .catalogo__prod h4 {
     padding-bottom: 15px;
-    font-size: 100%;
+    font-size: 120%;
     font-weight: bold;
+}
+
+
+/*Animaciones en Catalogo*/
+
+@keyframes animacion-productos {
+    100% {
+        filter: opacity(.5);
+        width: 90%;
+    }
+}
+
+.catalogo__prod img:hover {
+    transform: scale(0.9);
+    filter: opacity(0.7);
+    transition-duration: 1s;
 }
 
 
