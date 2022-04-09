@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa de las Balanzas</title>
+    <!-- Estilo de CSS-->
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <!-- Estilo de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oregano&display=swap" rel="stylesheet">
+</head>
+
+<body id="cuerpo">
+    <header class="header">
+        <div class="header__logo">
+            <a href="./index.html"><img src="./Imagenes/logo-5.jpeg" alt=" Logo-3 " width="200" height="52"></a>
+        </div>
+        <nav class="header__menu">
+            <ul>
+                <li> <a href="./index.html ">Home</a></li>
+                <li> <a href="./Catalogo.html ">Catalogo</a></li>
+                <li> <a href="./Contacto.html ">Contactanos</a> </li>
+                <li> <a href="./Ubicacion.html ">Donde Estamos</a></li>
+                <li> <a href="./Nosotros.html ">Quienes Somos</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="contacto">
+            <h2>¿Tenes algunda duda o queres consultar sobre nuestros produtos? !No dudes en consultar! </h2>
+            <div class=>
+                <form action="" class="contacto__form">
+                    <div class="contacto__form--nom">
+                        <label for="Nombre">Nombre y Apellido</label>
+                        <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese Su Nombre" required class="form__input">
+                    </div>
+                    <br>
+                    <div class="contacto__form--cel">
+                        <label for="Telefono">Ingrese Su Celular</label>
+                        <input type="tel" name="Telefono" id="Telefono" placeholder="Ingrese su Numero de Celular" required class="form__input">
+                    </div>
+                    <br>
+                    <div class="contacto__form--email">
+                        <label for="email">Ingrese su Email</label>
+                        <input type="email" name="email" id="email" placeholder="Ingrese su Email" required class="form__input">
+                    </div>
+                    <br>
+                    <div class="contacto__form--txt">
+                        <label for="multi">¿En que te podemos ayudar?</label>
+                        <textarea name="multi" id="multi" cols="30" rows="10" placeholder="Puede consultar tanto por productos como por reparaciones"></textarea>
+                    </div>
+                    <div class="contacto__form--boton">
+                        <input type="submit" value="Enviar Todo">
+                        <input type="reset" value="Borrar el Formulario">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="pie__contacto">
+            <ul>
+                <li> Contacto: 1131923911</li>
+                <li>Mail: lacasadelasbalanzas@outlook.com</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="pie__redes">
+                <li>
+                    <a href="https://www.instagram.com/lacasadelasbalanzas/ " target="_blank "> <img src="./Imagenes/ing.jpg" alt="Instagram " class="redes "></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/CasadelasBalanzas " target="_blank "> <img src="./Imagenes/Face.png " alt="Facebook " class="redes "></a>
+                </li>
+            </ul>
+        </div>
+        <div class="pie__subir">
+            <p><a href="#cuerpo">Ir al Princio</a></p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
