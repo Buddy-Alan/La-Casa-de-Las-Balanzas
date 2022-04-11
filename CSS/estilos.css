@@ -479,7 +479,7 @@ textarea {
         height: 65px;
     }
     .header__menu ul {
-        font-size: 50%;
+        font-size: 70%;
         text-align: center;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -529,7 +529,7 @@ textarea {
         font-size: 75%;
     }
     .ubi .ubi__nos p {
-        font-size: 85%;
+        font-size: 120%;
     }
     .ubi__mapa {
         width: 500px;
