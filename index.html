@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Casa de las Balanzas</title>
     <link rel="shortcut icon" href="./Imagenes/Logo.jpeg">
+    <!-- Boostrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Estilo de CSS-->
     <link rel="stylesheet" href="./CSS/estilos.css">
     <!-- Estilo de letra -->
@@ -16,9 +18,14 @@
 </head>
 
 <body id="cuerpo">
+
+
+
+
     <header class="header">
+
         <div class="header__logo">
-            <a href="./index.html"><img src="./Imagenes/logo-5.jpeg" alt=" Logo-3 " width="200" height="52"></a>
+            <a href="./index.html"><img src="./Imagenes/logo.jpeg" alt="Logo"></a>
         </div>
         <nav class="header__menu">
             <ul>
@@ -33,22 +40,31 @@
 
     <main class="main">
         <section class="home">
-            <div class="home__horarios">
-                <h1>Horarios de Atención</h1>
-                <p>Lunes a Viernes </p>
-                <p> 10 Hs a 17 Hs </p>
-                <p> Sábados</p>
-                <p> 9Hs a 13Hs.</p>
+            <div class="home__carrusel">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./Imagenes/La Casa de las Balanzas - Horarios.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Imagenes/La Casa de las Balanzas.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
 
-            </div>
-            <div class="home__info">
-                <p class="titulo">¡Todo para el Carnicero!</p>
-                <p class="columnaIzquierda"> Nos Dedicamos a Reparación y Venta De: Maquinarias Comerciales, Articulos de Bazar, Productos de Gatronomia, Insumos de Cheff entre otros! </p>
-                <p class="columnaDerecha"></p>
-            </div>
-            <div class="home__img">
-                <img src="./Imagenes/Frente.jpg" alt="Consultas" class="frente">
-            </div>
+                </div>
+                <div class="home__img">
+                    <img src="./Imagenes/parrila para pesacdo.jpg" alt="Parrila Para Pescado">
+                    <img src="./Imagenes/Tijeras de Cocina.jpg" alt="Tijearas de Cocina">
+                    <img src="./Imagenes/molde mufins.jpg" alt="Molde de Mufins">
+                </div>
         </section>
     </main>
 
@@ -74,7 +90,8 @@
             <p><a href="#cuerpo">Ir al Princio</a></p>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>

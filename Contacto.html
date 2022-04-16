@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Casa de las Balanzas</title>
+    <link rel="shortcut icon" href="./Imagenes/Logo.jpeg">
+    <!-- Boostrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Estilo de CSS-->
     <link rel="stylesheet" href="./CSS/estilos.css">
     <!-- Estilo de letra -->
@@ -15,9 +18,14 @@
 </head>
 
 <body id="cuerpo">
+
+
+
+
     <header class="header">
+
         <div class="header__logo">
-            <a href="./index.html"><img src="./Imagenes/logo-5.jpeg" alt=" Logo-3 " width="200" height="52"></a>
+            <a href="./index.html"><img src="./Imagenes/logo.jpeg" alt="Logo"></a>
         </div>
         <nav class="header__menu">
             <ul>
@@ -30,35 +38,35 @@
         </nav>
     </header>
 
-    <main class="main">
-        <section class="contacto">
-            <h2>¿Tenes algunda duda o queres consultar sobre nuestros produtos? !No dudes en consultar! </h2>
-            <div class=>
-                <form action="" class="contacto__form">
-                    <div class="contacto__form--nom">
-                        <label for="Nombre">Nombre y Apellido</label>
-                        <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese Su Nombre" required class="form__input">
-                    </div>
-                    <br>
-                    <div class="contacto__form--cel">
-                        <label for="Telefono">Ingrese Su Celular</label>
-                        <input type="tel" name="Telefono" id="Telefono" placeholder="Ingrese su Numero de Celular" required class="form__input">
-                    </div>
-                    <br>
-                    <div class="contacto__form--email">
-                        <label for="email">Ingrese su Email</label>
-                        <input type="email" name="email" id="email" placeholder="Ingrese su Email" required class="form__input">
-                    </div>
-                    <br>
-                    <div class="contacto__form--txt">
-                        <label for="multi">¿En que te podemos ayudar?</label>
-                        <textarea name="multi" id="multi" cols="30" rows="10" placeholder="Puede consultar tanto por productos como por reparaciones"></textarea>
-                    </div>
-                    <div class="contacto__form--boton">
-                        <input type="submit" value="Enviar Todo">
-                        <input type="reset" value="Borrar el Formulario">
-                    </div>
-                </form>
+    <main class="contacto">
+        <p> ¿Tenes algunda duda o queres preguntar sobre nuestros produtos? <br>!No dudes en consultar!</p>
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Nombre </label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese Su Nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Celular</label>
+                            <input type="tel" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese Su Celular" required>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control form_text" placeholder="Dejanos tu Consulta" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Dejanos tu consulta</label>
+                        </div>
+                        <br>
+                        <div class="form_boton">
+                            <input type="submit" value="Enviar Todo">
+                            <input type="reset" value="Borrar el Formulario">
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -85,7 +93,8 @@
         </div>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 </body>
 

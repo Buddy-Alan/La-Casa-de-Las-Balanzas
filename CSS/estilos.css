@@ -10,28 +10,32 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none
+}
+
 html {
     scroll-behavior: smooth;
     width: 100%;
     height: auto;
 }
 
-body {
-    background-color: #e3f9fa;
-}
-
 .header {
     border-top: solid black 5px;
+    background-image: linear-gradient(to bottom, #ffffff, #fffffe, #e6e6e6, #cfd0d0);
     display: grid;
     grid-template-columns: 1fr 2fr;
+    height: 80px;
     width: 100%;
-    height: 57px;
-    background-color: #58b8bf;
+}
+
+.collapse {
+    justify-content: flex-end;
 }
 
 .header__logo img {
-    width: 70%;
-    height: 52px;
+    width: auto;
+    height: 75px;
 }
 
 .header__menu {
@@ -47,6 +51,7 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
+    margin-bottom: 0px;
 }
 
 .header__menu ul li {
@@ -57,7 +62,7 @@ body {
 .header__menu ul li a {
     letter-spacing: 3px;
     padding: 3px;
-    color: whitesmoke;
+    color: black;
     text-transform: uppercase;
 }
 
@@ -65,37 +70,17 @@ body {
 /* Colorea el LI cuando pasas el mouse */
 
 .header__menu ul li a:hover {
-    color: black;
+    color: blue;
 }
-
-
-/*Buscador de Catalogo */
 
 .main {
-    border-top: 15px solid #cadbda;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    display: grid;
-}
-
-.home {
     background-image: url(../Imagenes/Fondo\ 2.jpeg);
     background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, auto);
-    justify-content: center;
-    margin: (0, auto);
-    font-size: 200%;
 }
 
 .home__img {
     display: flex;
     justify-content: center;
-}
-
-.frente {
-    width: 100%;
 }
 
 .home__horarios {
@@ -104,20 +89,18 @@ body {
     align-items: center;
 }
 
-.home__img img {
-    width: 90%;
-    height: 90%;
+.home__img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-left: 5px;
 }
 
-.home__info {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    font-weight: bold;
-    margin: 10px;
+.home__img img {
+    width: 98%;
+    height: 100%;
 }
 
 
@@ -129,17 +112,6 @@ body {
     grid-template-rows: repeat(1, auto);
     justify-items: center;
 }
-
-
-/*
-        .catalogo {
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            padding-left: 40px;
-            padding-right: 40px;
-        }
-        */
 
 .catalogo .catalogo__prod {
     align-self: center;
@@ -242,13 +214,6 @@ body {
     background-size: cover;
 }
 
-
-/*
-.ubi__nos {
-    padding-top: 50px;
-}
-*/
-
 .ubi__nos p {
     font-size: 120%;
     text-align: center;
@@ -273,62 +238,33 @@ body {
 .contacto {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20px, 1fr;
     padding-left: 20px;
     background-image: url(../Imagenes/Fondo\ 2.jpeg);
     background-size: cover;
     padding-bottom: 5px;
 }
 
-.contacto h2 {
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.form-control {
+    width: 30%;
+    font-size: 1.2rem;
 }
 
-.contacto__form label {
-    font-size: 135%;
-    font-family: Arial, Helvetica, sans-serif;
+.form_text {
+    width: 60%;
 }
 
-.contacto__form {
-    padding-top: 20px;
-    padding-left: 20px;
+.form_boton {
+    margin-bottom: 10px;
 }
 
-.contacto__form label {
-    padding-bottom: 10px;
+.form-label {
+    font-size: 1.3rem;
 }
 
-.contacto__form input,
-textarea {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/*Clase creada para que no se me modifiquen todos los formularios*/
-
-.form__input {
-    width: 200px;
-    font-size: 85%;
-}
-
-.contacto__form--txt {
-    align-items: center;
-    padding-bottom: 20px;
-}
-
-.contacto__form--nom,
-.contacto__form--cel,
-.contacto__form--email,
-.contacto__form--txt {
-    display: grid;
-    grid-template-columns: 0.4fr;
-}
-
-.contacto__form--boton {
-    display: grid;
-    grid-template-columns: 0.1fr 0.1fr;
-    gap: 5px;
+.contacto p {
+    margin: 20px 20px;
+    font-size: 2rem;
+    letter-spacing: 3px;
 }
 
 
@@ -375,7 +311,7 @@ textarea {
 .pie {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 20px;
+    grid-template-rows: 50px 20px;
     flex-direction: column;
     background-color: lightsteelblue;
 }
@@ -385,29 +321,23 @@ textarea {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-left: 9px;
     padding-right: 9px;
     padding-top: 5px;
-    /* height: 48px;
-            */
-}
-
-.pie__contacto ul {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    margin: 5px;
 }
 
 .pie__contacto ul li {
     font-weight: bold;
-    font-size: 90%;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
     padding-bottom: 10px;
+    padding-right: 15px;
 }
 
 .pie__contacto ul {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    justify-content: center;
 }
 
 .pie__redes {
@@ -421,18 +351,23 @@ textarea {
     height: 40px;
 }
 
+.carousel-item img {
+    height: 435px;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+
+/* Estilado para contact*/
+
 @media only screen and (max-width: 999px) {
     .header__menu ul {
-        font-size: 60%;
+        font-size: 0.8rem;
         text-align: center;
         display: flex;
         align-items: center;
-    }
-    .header__menu ul {
-        font-size: 67%;
-    }
-    .home {
-        font-size: 150%;
     }
     .ubi__mapa iframe {
         width: 70%;
@@ -440,21 +375,6 @@ textarea {
     }
     .ubi__nos p {
         font-size: 130%;
-    }
-    .contacto__form label {
-        font-size: 120%;
-    }
-    .form__input {
-        font-size: 90%;
-    }
-    .contacto__form--txt {
-        grid-template-columns: 0.5fr;
-    }
-    .contacto h2 {
-        font-size: 100%;
-    }
-    .contacto__form--txt textarea {
-        font-size: 10%;
     }
     .ubi__nos p {
         font-size: 100%;
@@ -464,8 +384,35 @@ textarea {
         height: 400px;
         justify-self: center;
     }
+    /*Estilado de nosotros.html*/
     .main__presentacion p {
         font-size: 125%;
+    }
+    /*Carrusel del Index*/
+    .carousel-item img {
+        height: 300px;
+    }
+    .pie__contacto ul li {
+        font-size: 0.9rem;
+    }
+    /*Estilado para los Formualrios*/
+    .form-control {
+        width: 50%;
+        font-size: 0.9rem;
+    }
+    .form_text {
+        width: 70%;
+    }
+    .form_boton {
+        margin-bottom: 7px;
+        font-size: 0.9rem;
+    }
+    .form-label {
+        font-size: 1rem;
+    }
+    .contacto p {
+        margin: 20px 20px;
+        font-size: 1.5rem;
     }
 }
 
@@ -491,43 +438,24 @@ textarea {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(1, auto);
     }
-    .home {
-        font-size: 125%;
-    }
-    .home__info {
-        margin: 5px;
-    }
+    /*Estilado para Footer*/
     .pie__contacto ul {
         display: flex;
         flex-direction: column;
     }
     .pie__contacto ul li {
         font-weight: bold;
-        font-size: 70%;
+        font-size: 0.7rem;
         letter-spacing: 1px;
-        text-transform: uppercase;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
     .pie__redes {
-        padding-top: 10px;
         display: flex;
         justify-content: space-around;
+        align-items: center;
+        padding-top: 10px;
     }
-    .pie__contacto {
-        font-size: 120%;
-    }
-    .pie__redes {
-        padding-top: 1px;
-    }
-    .contacto__form label {
-        font-size: 95%;
-    }
-    .contacto__form--txt {
-        grid-template-columns: 0.7fr;
-    }
-    .contacto h2 {
-        font-size: 75%;
-    }
+    /*Estilado para Ubicacion*/
     .ubi .ubi__nos p {
         font-size: 120%;
     }
@@ -535,8 +463,31 @@ textarea {
         width: 500px;
         height: 90%;
     }
+    /*Estilado de nosotros.html*/
     .main__presentacion p {
         font-size: 100%;
         padding-top: 7px;
+    }
+    /*Carrusel del index*/
+    .carousel-item img {
+        height: 250px;
+    }
+    /*Estilado para los Formualrios*/
+    .form-control {
+        width: 50%;
+        font-size: 0.8rem;
+    }
+    .form_boton {
+        font-size: 0.8rem;
+    }
+    .form-label {
+        font-size: 0.9rem;
+    }
+    .contacto p {
+        margin: 15px 15px;
+        font-size: 1.3rem;
+    }
+    .form_text {
+        width: 85%;
     }
 }
