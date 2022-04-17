@@ -14,6 +14,10 @@ a {
     text-decoration: none
 }
 
+ul {
+    padding-left: 0px;
+}
+
 html {
     scroll-behavior: smooth;
     width: 100%;
@@ -27,10 +31,6 @@ html {
     grid-template-columns: 1fr 2fr;
     height: 80px;
     width: 100%;
-}
-
-.collapse {
-    justify-content: flex-end;
 }
 
 .header__logo img {
@@ -76,17 +76,6 @@ html {
 .main {
     background-image: url(../Imagenes/Fondo\ 2.jpeg);
     background-size: cover;
-}
-
-.home__img {
-    display: flex;
-    justify-content: center;
-}
-
-.home__horarios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .home__img {
@@ -246,7 +235,7 @@ html {
 
 .form-control {
     width: 30%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .form_text {
@@ -353,10 +342,6 @@ textarea {
 
 .carousel-item img {
     height: 435px;
-}
-
-ul {
-    padding-left: 0px;
 }
 
 
