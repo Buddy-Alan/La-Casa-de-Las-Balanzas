@@ -335,9 +335,8 @@ textarea {
     justify-content: space-around;
 }
 
-.redes {
-    width: 40px;
-    height: 40px;
+.pie__redes img {
+    height: 35px;
 }
 
 .carousel-item img {
