@@ -1,0 +1,222 @@
+@import "header";
+@import "footer";
+a {
+    text-decoration: none
+}
+
+ul {
+    padding-left: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    /* border: none;*/
+    outline: none;
+    font-family: 'Oregano', cursive;
+    /* Se utiliza para que el contenedor no se pase*/
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: auto;
+}
+
+.main {
+    background-image: url(../Imagenes/Fondo-2.jpeg);
+    background-size: cover;
+}
+
+.home__img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-left: 5px;
+    img {
+        width: 98%;
+        height: 100%;
+    }
+}
+
+.carousel-item img {
+    height: 435px;
+}
+
+
+/* Parte Pincipal para Catalogos*/
+
+.catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    &__prod {
+        align-self: center;
+        justify-self: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        img {
+            width: 80%;
+            height: 80%;
+            padding-left: 10px;
+            &:hover {
+                transform: scale(0.9);
+                filter: opacity(0.7);
+                transition-duration: 1s;
+            }
+        }
+        h4 {
+            padding-bottom: 15px;
+            font-size: 120%;
+            font-weight: bold;
+        }
+    }
+}
+
+
+/*Animaciones en Catalogo*/
+
+
+/* Clase para darle tamaño a las imagenes de Catalogos*/
+
+.prodImg {
+    width: 250px;
+    height: 250px;
+}
+
+
+/*Keygrame para presentacion*/
+
+@keyframes imgPresentacion {
+    0% {
+        width: 30%;
+    }
+}
+
+
+/* Parte Principal de Presentacion*/
+
+.main__presentacion {
+    width: 100%;
+    background-image: url(../Imagenes/Fondo.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+        font-size: 200%;
+        text-align: center;
+        padding-top: 30px;
+        width: 80%;
+    }
+    img {
+        padding-top: 20px;
+        width: 60%;
+        animation-name: imgPresentacion;
+        animation-duration: 3s;
+    }
+}
+
+
+/*Parte Principal de Ubicacion*/
+
+.ubi {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 400px;
+    background-image: url(../Imagenes/Fondo.jpeg);
+    background-size: cover;
+    &__nos p {
+        font-size: 120%;
+        text-align: center;
+        letter-spacing: 3px;
+        font-weight: 800;
+    }
+    &__mapa {
+        display: flex;
+        justify-content: center;
+        iframe {
+            width: 50%;
+            height: auto;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+
+/*Pagina Principal de Contacto*/
+
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    background-image: url(../Imagenes/Fondo-2.jpeg);
+    background-size: cover;
+    padding-bottom: 5px;
+    p {
+        margin: 20px 20px;
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+}
+
+.form {
+    &-control {
+        width: 30%;
+        font-size: 1.1rem;
+    }
+    &_text {
+        width: 60%;
+    }
+    &_boton {
+        margin-bottom: 10px;
+    }
+    &-label {
+        font-size: 1.3rem;
+    }
+}
+
+
+/*PRODUCTOS*/
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    padding-left: 55px;
+    img {
+        width: 350px;
+        height: 350px;
+        padding-bottom: 25px;
+        padding-left: 50px;
+    }
+    h2 {
+        padding-bottom: 5px;
+        padding-left: 10px;
+        font-size: 150%;
+    }
+}
+
+
+/* Lo comento porque quizas lo borre
+.formProducto {
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    label,
+    input,
+    textarea {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+*/
+
+@import "mediaQueries";

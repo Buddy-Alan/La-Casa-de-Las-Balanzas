@@ -74,7 +74,7 @@ html {
 }
 
 .main {
-    background-image: url(../Imagenes/Fondo\ 2.jpeg);
+    background-image: url(../Imagenes/Fondo-2.jpeg);
     background-size: cover;
 }
 
@@ -228,7 +228,7 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     padding-left: 20px;
-    background-image: url(../Imagenes/Fondo\ 2.jpeg);
+    background-image: url(../Imagenes/Fondo-2.jpeg);
     background-size: cover;
     padding-bottom: 5px;
 }

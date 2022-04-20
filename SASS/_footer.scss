@@ -1,0 +1,36 @@
+.pie {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50px 20px;
+    flex-direction: column;
+    background-color: lightsteelblue;
+    &__redes {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        img {
+            height: 38px;
+        }
+    }
+    &__contacto {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 9px;
+        padding-top: 5px;
+        margin: 5px;
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            justify-content: center;
+            li {
+                font-weight: bold;
+                font-size: 1.2rem;
+                letter-spacing: 2px;
+                padding-bottom: 10px;
+                padding-right: 15px;
+            }
+        }
+    }
+}
