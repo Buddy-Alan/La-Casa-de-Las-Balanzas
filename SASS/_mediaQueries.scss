@@ -57,22 +57,21 @@
     .header {
         width: 100%;
         height: 70px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: map-get($map: $cantidadColumnas, $key: dos);
         &__logo img {
             height: 65px;
         }
         &__menu ul {
             font-size: 70%;
             text-align: center;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            @include grid__tresCol;
             li {
                 padding-bottom: 2px;
             }
         }
     }
     .catalogo {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: map-get($map: $cantidadColumnas, $key: dos);
     }
     /*Estilado para Footer*/
     .pie {
