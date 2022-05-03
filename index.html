@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="Venta de insumos de cocina, reparación de balanzas, picadoras de carne, cortadoras de fiambre">
+    <meta name="keywords" content="Venta, Reparacion, Cocina, Hogar, Comercio Balanzas, Cortadora, Fiambre">
     <title>La Casa de las Balanzas</title>
     <link rel="shortcut icon" href="./Imagenes/Logo.jpeg">
     <!-- Boostrap  -->
@@ -15,39 +18,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oregano&display=swap" rel="stylesheet">
-    <!-- SEO -->
-    <meta name="description" content="Venta de insumos de cocina, reparación de balanzas, picadoras de carne, cortadoras de fiambre">
-    <meta name="keywords" content="Venta, Reparacion, Cocina, Hogar, Comercio Balanzas, Cortadora, Fiambre">
+
+
 </head>
 
 <body id="cuerpo">
 
-    <header class="header">
+    <header class="header header__color">
 
         <div class="header__logo">
             <a href="./index.html"><img src="./Imagenes/logo.jpeg" alt="Logo"></a>
         </div>
-        <nav class="header__menu ">
-            <ul>
-                <li> <a href="./index.html ">Home</a></li>
-                <li> <a href="./Catalogo.html ">Catalogo</a></li>
-                <li> <a href="./Contacto.html ">Contactanos</a> </li>
-                <li> <a href="./Ubicacion.html ">Donde Estamos</a></li>
-                <li> <a href="./Nosotros.html ">Quienes Somos</a> </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light header__menu">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Catalogo.html">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contacto.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Ubicacion.html">Donde Estamos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Nosotros.html">Quienes Somos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
     </header>
 
     <main class="main">
         <section class="home">
+            <div class="home__presentacion">
+                <img src="./Imagenes/Presentacion.jpeg" class="rounded mx-auto d-block" alt="Imagen de Presentacion">
+            </div>
             <div class="home__carrusel">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./Imagenes/La Casa de las Balanzas - Horarios.jpg" class="d-block w-100" alt="...">
+                            <img src="./Imagenes/La Casa de las Balanzas - Horarios.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="./Imagenes/La Casa de las Balanzas.jpg" class="d-block w-100" alt="...">
+                            <img src="./Imagenes/La Casa de las Balanzas.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -60,10 +84,35 @@
                     </button>
 
                 </div>
+                <div class="home__destacados">
+                    <h3>Nuestros Productos Destacados</h3>
+                    <hr>
+                </div>
                 <div class="home__img">
                     <img src="./Imagenes/parrila para pesacdo.jpg" alt="Parrila Para Pescado">
                     <img src="./Imagenes/Tijeras de Cocina.jpg" alt="Tijearas de Cocina">
                     <img src="./Imagenes/molde mufins.jpg" alt="Molde de Mufins">
+                </div>
+                <div class="medioPago">
+                    <div class="medioPago__titulo">
+                        <h3>Nuestros Medios de Pago</h3>
+                    </div>
+                    <div class="medioPago__efectivo">
+                        <p>Efectivo</p>
+                        <img src="./Imagenes/efectivo.png" alt="efectivo">
+                    </div>
+                    <div class="medioPago__MP">
+                        <p>Mercado Pago</p>
+                        <img src="./Imagenes/MP.png" alt="MP">
+                    </div>
+                    <div class="medioPago__tarjetas">
+                        <p>Debito/Credito</p>
+                        <img src="./Imagenes/tarjetas.png" alt="Tarjetas">
+                    </div>
+                    <div class="medioPago__transfer">
+                        <p>Transferencias Bancarias</p>
+                        <img src="./Imagenes/transfer.png" alt="Trasnferencias">
+                    </div>
                 </div>
         </section>
     </main>

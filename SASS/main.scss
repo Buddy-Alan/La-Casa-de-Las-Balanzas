@@ -5,15 +5,34 @@
 
 @import "maps";
 $tipoGrid: grid;
+@mixin grid__cuatroCol {
+    display: $tipoGrid;
+    grid-template-columns: map-get($map: $cantidadColumnas, $key: cuatro);
+}
+
 @mixin grid__tresCol {
     display: $tipoGrid;
     grid-template-columns: map-get($map: $cantidadColumnas, $key: tres);
     justify-content: center;
 }
 
+@mixin grid__dosCol {
+    display: $tipoGrid;
+    grid-template-columns: map-get($map: $cantidadColumnas, $key: dos);
+    justify-content: center;
+}
+
 @mixin grid__unaCol {
     display: $tipoGrid;
     grid-template-columns: map-get($map: $cantidadColumnas, $key: una);
+}
+
+@mixin flex__pagos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
 a {
@@ -47,19 +66,101 @@ html {
     background-size: cover;
 }
 
-.home__img {
-    @include grid__tresCol;
-    grid-template-rows: 1fr;
-    align-content: center;
-    margin-left: 5px;
-    img {
-        width: 98%;
-        height: 100%;
+@keyframes imgPresentacion {
+    0% {
+        width: 30%;
+    }
+}
+
+
+/* Estilados para Home*/
+
+.home {
+    &__destacados {
+        @extend .bg__fondo1;
+        hr {
+            size: 500%;
+        }
+        h3 {
+            font-size: 3rem;
+            text-align: center;
+            padding-top: 10px;
+        }
+    }
+    &__img {
+        @include grid__tresCol;
+        align-content: center;
+        margin-left: 5px;
+        @extend .bg__fondo1;
+        img {
+            width: 98%;
+            height: 93%;
+        }
+    }
+    &__presentacion {
+        @include grid__unaCol;
+        justify-items: center;
+        @extend .bg__fondo1;
+        img {
+            align-items: center;
+            width: 95%;
+            height: 400px;
+            animation-name: imgPresentacion;
+            animation-duration: 1s;
+        }
     }
 }
 
 .carousel-item img {
-    height: 400px;
+    height: 585px;
+}
+
+.medioPago {
+    @include grid__cuatroCol;
+    grid-template-rows: 30px 1fr;
+    align-self: center;
+    justify-self: center;
+    @extend .bg__fondo1;
+    p {
+        font-size: 1.3rem;
+        text-align: center;
+        padding-top: 15px;
+        padding-right: 10px;
+    }
+    &__titulo {
+        grid-column: 1/5;
+        grid-row: 1/1;
+        justify-self: center;
+    }
+    &__efectivo {
+        @include flex__pagos;
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+    &__MP {
+        @include flex__pagos;
+        img {
+            height: 35px;
+            width: 150px;
+            padding-left: 10px;
+        }
+    }
+    &__tarjetas {
+        @include flex__pagos;
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    &__transfer {
+        @include flex__pagos;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
 }
 
 
@@ -79,8 +180,9 @@ html {
         overflow: hidden;
         img {
             width: 80%;
-            height: 80%;
+            height: 100%;
             padding-left: 10px;
+            padding-top: 5px;
             &:hover {
                 transform: scale(0.9);
                 filter: opacity(0.7);
@@ -89,6 +191,8 @@ html {
         }
         h4 {
             padding-bottom: 15px;
+            padding-top: 5px;
+            padding-left: 5px;
             font-size: 120%;
             font-weight: bold;
         }
@@ -119,23 +223,17 @@ html {
 /* Parte Principal de Presentacion*/
 
 .main__presentacion {
-    width: 100%;
-    background-size: cover;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     p {
-        font-size: 200%;
-        text-align: center;
-        padding-top: 30px;
-        width: 80%;
+        text-align: justify;
+        font-size: 2rem;
+        margin: 20px;
     }
     img {
-        padding-top: 20px;
-        width: 60%;
-        animation-name: imgPresentacion;
-        animation-duration: 3s;
+        height: 300px;
+        width: 95%;
     }
 }
 
@@ -144,13 +242,22 @@ html {
 
 .ubi {
     @include grid__unaCol;
-    grid-template-rows: 50px 400px;
+    grid-template-rows: 50px 400px 1fr;
     background-size: cover;
     &__nos p {
         font-size: 120%;
         text-align: center;
         letter-spacing: 3px;
         font-weight: 800;
+    }
+    &__frente {
+        display: flex;
+        justify-content: center;
+        img {
+            height: 350px;
+            width: auto;
+            padding-bottom: 5px;
+        }
     }
     &__mapa {
         display: flex;
