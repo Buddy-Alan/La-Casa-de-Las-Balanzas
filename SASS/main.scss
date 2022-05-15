@@ -66,12 +66,6 @@ html {
     background-size: cover;
 }
 
-@keyframes imgPresentacion {
-    0% {
-        width: 30%;
-    }
-}
-
 
 /* Estilados para Home*/
 
@@ -100,15 +94,22 @@ html {
     &__presentacion {
         @include grid__unaCol;
         justify-items: center;
-        @extend .bg__fondo1;
+        background-color: #1d1716;
         img {
             align-items: center;
-            width: 95%;
-            height: 400px;
-            animation-name: imgPresentacion;
-            animation-duration: 1s;
+            width: 65%;
+            height: 350px;
         }
     }
+    &__carrusel {
+        width: 95%;
+        height: 80%;
+    }
+}
+
+.seccion__carrusel {
+    display: flex;
+    justify-content: center;
 }
 
 .carousel-item img {
@@ -120,7 +121,7 @@ html {
     grid-template-rows: 30px 1fr;
     align-self: center;
     justify-self: center;
-    @extend .bg__fondo1;
+    background-image: linear-gradient(to bottom, #fffffe, #fffffe, #e6e6e6, #cfd0d0);
     p {
         font-size: 1.3rem;
         text-align: center;
@@ -183,17 +184,13 @@ html {
             height: 100%;
             padding-left: 10px;
             padding-top: 5px;
-            &:hover {
-                transform: scale(0.9);
-                filter: opacity(0.7);
-                transition-duration: 1s;
-            }
         }
-        h4 {
+        h3 {
             padding-bottom: 15px;
             padding-top: 5px;
             padding-left: 5px;
-            font-size: 120%;
+            font-size: 1.3rem;
+            overflow: hidden;
             font-weight: bold;
         }
     }
@@ -208,15 +205,6 @@ html {
 .prodImg {
     width: 250px;
     height: 250px;
-}
-
-
-/*Keygrame para presentacion*/
-
-@keyframes imgPresentacion {
-    0% {
-        width: 30%;
-    }
 }
 
 
@@ -242,10 +230,10 @@ html {
 
 .ubi {
     @include grid__unaCol;
-    grid-template-rows: 50px 400px 1fr;
     background-size: cover;
+    justify-content: center;
     &__nos p {
-        font-size: 120%;
+        font-size: 1.5rem;
         text-align: center;
         letter-spacing: 3px;
         font-weight: 800;
@@ -254,8 +242,8 @@ html {
         display: flex;
         justify-content: center;
         img {
-            height: 350px;
-            width: auto;
+            height: 65vh;
+            width: 75vw;
             padding-bottom: 5px;
         }
     }
@@ -263,8 +251,8 @@ html {
         display: flex;
         justify-content: center;
         iframe {
-            width: 50%;
-            height: auto;
+            width: 100vh;
+            height: 30vw;
             padding-bottom: 10px;
         }
     }

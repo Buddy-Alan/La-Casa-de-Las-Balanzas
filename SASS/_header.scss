@@ -3,14 +3,14 @@
         background-image: linear-gradient(to bottom, #ffffff, #fffffe, #e6e6e6, #cfd0d0);
         display: grid;
         grid-template-columns: 1fr 2fr;
-        height: 80px;
+        height: 130px;
         width: 100%;
         position: sticky;
         top: 0;
         z-index: 100;
         &__logo img {
             width: auto;
-            height: 75px;
+            height: 120px;
             &:hover {
                 transform: scale(0.9);
                 filter: opacity(0.9);
@@ -24,7 +24,7 @@
             height: auto;
             overflow: none;
             ul {
-                font-size: 100%;
+                font-size: 1.1rem;
                 text-align: center;
                 display: flex;
                 align-items: center;

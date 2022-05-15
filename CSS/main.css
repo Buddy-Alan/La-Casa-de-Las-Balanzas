@@ -7,7 +7,7 @@
   display: grid;
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
-  height: 80px;
+  height: 130px;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
@@ -17,7 +17,7 @@
 
 .header__logo img {
   width: auto;
-  height: 75px;
+  height: 120px;
 }
 
 .header__logo img:hover {
@@ -42,7 +42,7 @@
 }
 
 .header__menu ul {
-  font-size: 100%;
+  font-size: 1.1rem;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,7 +175,7 @@
 }
 
 /*Creacion de Maps*/
-.bg__fondo1, .main, .home__destacados, .home__img, .home__presentacion, .medioPago {
+.bg__fondo1, .main, .home__destacados, .home__img {
   background-image: url(../Imagenes/Fondo-2.jpeg);
 }
 
@@ -214,18 +214,6 @@ html {
   background-size: cover;
 }
 
-@-webkit-keyframes imgPresentacion {
-  0% {
-    width: 30%;
-  }
-}
-
-@keyframes imgPresentacion {
-  0% {
-    width: 30%;
-  }
-}
-
 /* Estilados para Home*/
 .home__destacados hr {
   size: 500%;
@@ -261,18 +249,29 @@ html {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   justify-items: center;
+  background-color: #1d1716;
 }
 
 .home__presentacion img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 65%;
+  height: 350px;
+}
+
+.home__carrusel {
   width: 95%;
-  height: 400px;
-  -webkit-animation-name: imgPresentacion;
-          animation-name: imgPresentacion;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  height: 80%;
+}
+
+.seccion__carrusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .carousel-item img {
@@ -290,6 +289,8 @@ html {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fffffe), color-stop(#fffffe), color-stop(#e6e6e6), to(#cfd0d0));
+  background-image: linear-gradient(to bottom, #fffffe, #fffffe, #e6e6e6, #cfd0d0);
 }
 
 .medioPago p {
@@ -440,20 +441,12 @@ html {
   padding-top: 5px;
 }
 
-.catalogo__prod img:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-filter: opacity(0.7);
-          filter: opacity(0.7);
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.catalogo__prod h4 {
+.catalogo__prod h3 {
   padding-bottom: 15px;
   padding-top: 5px;
   padding-left: 5px;
-  font-size: 120%;
+  font-size: 1.3rem;
+  overflow: hidden;
   font-weight: bold;
 }
 
@@ -462,13 +455,6 @@ html {
 .prodImg {
   width: 250px;
   height: 250px;
-}
-
-/*Keygrame para presentacion*/
-@keyframes imgPresentacion {
-  0% {
-    width: 30%;
-  }
 }
 
 /* Parte Principal de Presentacion*/
@@ -500,13 +486,14 @@ html {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 50px 400px 1fr;
-      grid-template-rows: 50px 400px 1fr;
   background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .ubi__nos p {
-  font-size: 120%;
+  font-size: 1.5rem;
   text-align: center;
   letter-spacing: 3px;
   font-weight: 800;
@@ -522,8 +509,8 @@ html {
 }
 
 .ubi__frente img {
-  height: 350px;
-  width: auto;
+  height: 65vh;
+  width: 75vw;
   padding-bottom: 5px;
 }
 
@@ -537,8 +524,8 @@ html {
 }
 
 .ubi__mapa iframe {
-  width: 50%;
-  height: auto;
+  width: 100vh;
+  height: 30vw;
   padding-bottom: 10px;
 }
 
@@ -644,7 +631,8 @@ html {
     font-size: 100%;
   }
   .ubi__frente img {
-    height: 230px;
+    width: 80vw;
+    height: 70vh;
   }
   .ubi__frente img {
     height: 230px;
@@ -690,7 +678,7 @@ html {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  .catalogo h4 {
+  .catalogo h3 {
     font-size: 1.1rem;
   }
   .catalogo img {
@@ -818,15 +806,20 @@ html {
   }
   /*Estilado para Ubicacion*/
   .ubi__nos p {
-    font-size: 120%;
+    font-size: 0.8rem;
   }
   .ubi__mapa {
-    width: 500px;
-    height: 85%;
-    padding-top: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ubi__mapa iframe {
+    width: 80vw;
+    height: 70vh;
   }
   .ubi__frente img {
-    height: 180px;
+    width: 90vw;
+    height: 40vh;
   }
   /*Estilado de nosotros.html*/
   .main__presentacion img {
