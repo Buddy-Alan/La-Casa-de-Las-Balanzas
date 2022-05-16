@@ -16,11 +16,11 @@
                     width: 90%;
                     height: 290px;
                 }
-            }       
-           &__img{
-            img {
-                height: 32vh;
             }
+            &__img {
+                img {
+                    height: 32vh;
+                }
             }
         }
         .ubi {
@@ -190,7 +190,7 @@
                 flex-direction: column;
                 li {
                     font-weight: bold;
-                    font-size: 0.8rem;
+                    font-size: 0.85rem;
                     letter-spacing: 1px;
                     padding-bottom: 5px;
                 }
