@@ -154,8 +154,16 @@
                 }
             }
         }
+        .main {
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
         .catalogo {
             grid-template-columns: map-get($map: $cantidadColumnas, $key: una);
+            &__prod {
+                justify-content: center;
+            }
             h3 {
                 font-size: 1.3rem;
             }
