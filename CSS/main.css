@@ -617,6 +617,9 @@ html {
     width: 90%;
     height: 290px;
   }
+  .home__img img {
+    height: 32vh;
+  }
   .ubi__mapa {
     width: 600px;
     height: 400px;
@@ -682,7 +685,8 @@ html {
     font-size: 1.1rem;
   }
   .catalogo img {
-    width: 70%;
+    width: 40vw;
+    height: 40vw;
   }
   .medioPago p {
     font-size: 1.3rem;
@@ -764,8 +768,20 @@ html {
     padding-bottom: 2px;
   }
   .catalogo {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .catalogo__prod {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .catalogo__prod img {
+    width: 65vw;
+    height: 65vw;
   }
   .home__destacados h3 {
     font-size: 1.3rem;
@@ -786,7 +802,7 @@ html {
   }
   .pie__contacto ul li {
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     letter-spacing: 1px;
     padding-bottom: 5px;
   }
@@ -815,18 +831,17 @@ html {
   }
   .ubi__mapa iframe {
     width: 80vw;
-    height: 70vh;
+    height: 70vw;
   }
   .ubi__frente img {
     width: 90vw;
-    height: 40vh;
+    height: 40vw;
   }
   /*Estilado de nosotros.html*/
   .main__presentacion img {
     height: 200px;
   }
   .main__presentacion p {
-    font-size: 1.1rem;
     padding-top: 7px;
   }
   /*Carrusel del index*/
