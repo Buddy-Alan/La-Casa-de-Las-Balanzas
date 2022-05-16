@@ -806,9 +806,6 @@ html {
     width: 85%;
     height: 220px;
   }
-  .home__img img {
-    height: 30vh;
-  }
   /*Estilado para Footer*/
   .pie__contacto ul {
     display: -webkit-box;
