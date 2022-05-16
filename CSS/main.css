@@ -617,10 +617,6 @@ html {
     width: 90%;
     height: 290px;
   }
-<<<<<<< HEAD
-  .home__img img {
-    height: 32vh;
-  }
   .ubi__mapa {
     width: 600px;
     height: 400px;
@@ -742,158 +738,6 @@ html {
     width: 55px;
     height: 55px;
   }
-=======
-}
-
-.ubi__mapa {
-  width: 600px;
-  height: 400px;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-.ubi__mapa iframe {
-  width: 70%;
-  height: 100%;
-}
-
-.ubi__nos p {
-  font-size: 100%;
-}
-
-.ubi__frente img {
-  width: 80vw;
-  height: 70vh;
-}
-
-.ubi__frente img {
-  height: 230px;
-}
-
-/*Estilado de nosotros.html*/
-.main__presentacion img {
-  height: 200px;
-}
-
-.main__presentacion p {
-  font-size: 1.5rem;
-}
-
-/*Carrusel del Index*/
-.carousel-item img {
-  height: 400px;
-}
-
-.pie__contacto ul li {
-  font-size: 0.9rem;
-}
-
-/*Estilado para los Formualrios*/
-.form-control {
-  width: 50%;
-  font-size: 0.9rem;
-}
-
-.form_text {
-  width: 70%;
-}
-
-.form_boton {
-  margin-bottom: 7px;
-  font-size: 0.9rem;
-}
-
-.form-label {
-  font-size: 1rem;
-}
-
-.contacto p {
-  margin: 20px 20px;
-  font-size: 1.5rem;
-}
-
-.header__mbl {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(#fffffe), color-stop(#cfd0d0), color-stop(#cfd0d0), color-stop(#e6e6e6, #cfd0d0), color-stop(#e6e6e6), to(#cfd0d0));
-  background-image: linear-gradient(to bottom, #ffffff, #fffffe, #cfd0d0, #cfd0d0, #cfd0d0 #e6e6e6, #e6e6e6, #cfd0d0);
-}
-
-.catalogo {
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-.catalogo h3 {
-  font-size: 1.1rem;
-}
-
-.catalogo img {
-  width: 40vw;
-  height: 40vw;
-}
-
-.medioPago p {
-  font-size: 1.3rem;
-}
-
-.medioPago h3 {
-  font-size: 1.5rem;
-}
-
-.medioPago__efectivo {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.medioPago__efectivo img {
-  height: 50px;
-  width: 50px;
-}
-
-.medioPago__MP {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.medioPago__MP img {
-  height: 35px;
-  width: 135px;
-  padding: none;
-}
-
-.medioPago__MP p {
-  padding-bottom: 15px;
-}
-
-.medioPago__tarjetas {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.medioPago__tarjetas img {
-  width: 50px;
-  height: 50px;
-  padding-bottom: 3px;
-}
-
-.medioPago__transfer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.medioPago__transfer img {
-  width: 55px;
-  height: 55px;
->>>>>>> 566de253aa81874f0dba1088ae89601ec9170598
 }
 
 @media only screen and (max-width: 599px) {
@@ -924,17 +768,16 @@ html {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .catalogo__prod {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .catalogo h3 {
+    font-size: 1.3rem;
   }
-  .catalogo__prod img {
+  .catalogo img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .catalogo img {
     width: 65vw;
-    height: 65vw;
+    height: 55vw;
   }
   .home__destacados h3 {
     font-size: 1.3rem;
@@ -944,7 +787,7 @@ html {
     height: 220px;
   }
   .home__img img {
-    height: 35vh;
+    height: 32vh;
   }
   /*Estilado para Footer*/
   .pie__contacto ul {
@@ -958,7 +801,7 @@ html {
   }
   .pie__contacto ul li {
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     letter-spacing: 1px;
     padding-bottom: 5px;
   }
@@ -998,6 +841,7 @@ html {
     height: 200px;
   }
   .main__presentacion p {
+    font-size: 1.3rem;
     padding-top: 7px;
   }
   /*Carrusel del index*/
