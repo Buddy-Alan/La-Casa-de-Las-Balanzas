@@ -617,6 +617,9 @@ html {
     width: 90%;
     height: 290px;
   }
+  .home__img img {
+    height: 25vh;
+  }
   .ubi__mapa {
     width: 600px;
     height: 400px;
