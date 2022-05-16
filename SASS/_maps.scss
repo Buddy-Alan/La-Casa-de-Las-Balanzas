@@ -1,8 +1,0 @@
-$cantidadColumnas:(una:(1fr), dos:(1fr 1fr), tres:(1fr 1fr 1fr), cuatro:(1fr 1fr 1fr 1fr));
-$imagenFondo:( fondo1: url(../Imagenes/Fondo-2.jpeg), fondo2: url(../Imagenes/Fondo.jpeg));
-@each $nombre,
-$valor in $imagenFondo {
-    .bg__#{$nombre} {
-        background-image: $valor;
-    }
-}
