@@ -18,120 +18,130 @@
                 }
             }
         }
-        .ubi {
-            &__mapa {
-                width: 600px;
-                height: 400px;
-                justify-self: center;
-                iframe {
-                    width: 70%;
-                    height: 100%;
-                }
-            }
-            &__nos p {
-                font-size: 100%;
-            }
-            &__frente {
-                img {
-                    width: 80vw;
-                    height: 70vh;
-                }
-            }
-            &__frente {
-                img {
-                    height: 230px;
-                }
-            }
-        }
-        /*Estilado de nosotros.html*/
-        .main__presentacion {
-            img {
-                height: 200px;
-            }
-            p {
-                font-size: 1.5rem;
-            }
-        }
-        /*Carrusel del Index*/
-        .carousel-item img {
+    }
+    
+    .ubi {
+        &__mapa {
+            width: 600px;
             height: 400px;
-        }
-        .pie__contacto ul li {
-            font-size: 0.9rem;
-        }
-        /*Estilado para los Formualrios*/
-        .form {
-            &-control {
-                width: 50%;
-                font-size: 0.9rem;
-            }
-            &_text {
+            justify-self: center;
+            iframe {
                 width: 70%;
-            }
-            &_boton {
-                margin-bottom: 7px;
-                font-size: 0.9rem;
-            }
-            &-label {
-                font-size: 1rem;
+                height: 100%;
             }
         }
-        .contacto p {
-            margin: 20px 20px;
+        &__nos p {
+            font-size: 100%;
+        }
+        &__frente {
+            img {
+                width: 80vw;
+                height: 70vh;
+            }
+        }
+        &__frente {
+            img {
+                height: 230px;
+            }
+        }
+    }
+    /*Estilado de nosotros.html*/
+    
+    .main__presentacion {
+        img {
+            height: 200px;
+        }
+        p {
             font-size: 1.5rem;
         }
-        .header__mbl {
-            background-image: linear-gradient(to bottom, #ffffff, #fffffe, #cfd0d0, #cfd0d0, #cfd0d0 #e6e6e6, #e6e6e6, #cfd0d0);
+    }
+    /*Carrusel del Index*/
+    
+    .carousel-item img {
+        height: 400px;
+    }
+    
+    .pie__contacto ul li {
+        font-size: 0.9rem;
+    }
+    /*Estilado para los Formualrios*/
+    
+    .form {
+        &-control {
+            width: 50%;
+            font-size: 0.9rem;
         }
-        .catalogo {
-            grid-template-columns: map-get($map: $cantidadColumnas, $key: dos);
-            h3 {
-                font-size: 1.1rem;
-            }
+        &_text {
+            width: 70%;
+        }
+        &_boton {
+            margin-bottom: 7px;
+            font-size: 0.9rem;
+        }
+        &-label {
+            font-size: 1rem;
+        }
+    }
+    
+    .contacto p {
+        margin: 20px 20px;
+        font-size: 1.5rem;
+    }
+    
+    .header__mbl {
+        background-image: linear-gradient(to bottom, #ffffff, #fffffe, #cfd0d0, #cfd0d0, #cfd0d0 #e6e6e6, #e6e6e6, #cfd0d0);
+    }
+    
+    .catalogo {
+        grid-template-columns: map-get($map: $cantidadColumnas, $key: dos);
+        h3 {
+            font-size: 1.1rem;
+        }
+        img {
+            width: 40vw;
+            height: 40vw;
+        }
+    }
+    
+    .medioPago {
+        p {
+            font-size: 1.3rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        &__efectivo {
+            flex-direction: column;
             img {
-                width: 70%;
+                height: 50px;
+                width: 50px;
             }
         }
-        .medioPago {
+        &__MP {
+            flex-direction: column;
+            img {
+                height: 35px;
+                width: 135px;
+                padding: none;
+            }
             p {
-                font-size: 1.3rem;
+                padding-bottom: 15px;
             }
-            h3 {
-                font-size: 1.5rem;
+        }
+        &__tarjetas {
+            flex-direction: column;
+            img {
+                width: 50px;
+                height: 50px;
+                padding-bottom: 3px;
             }
-            &__efectivo {
-                flex-direction: column;
-                img {
-                    height: 50px;
-                    width: 50px;
-                }
-            }
-            &__MP {
-                flex-direction: column;
-                img {
-                    height: 35px;
-                    width: 135px;
-                    padding: none;
-                }
-                p {
-                    padding-bottom: 15px;
-                }
-            }
-            &__tarjetas {
-                flex-direction: column;
-                img {
-                    width: 50px;
-                    height: 50px;
-                    padding-bottom: 3px;
-                }
-            }
-            &__transfer {
-                flex-direction: column;
-                flex-wrap: wrap;
-                img {
-                    width: 55px;
-                    height: 55px;
-                }
+        }
+        &__transfer {
+            flex-direction: column;
+            flex-wrap: wrap;
+            img {
+                width: 55px;
+                height: 55px;
             }
         }
     }
@@ -154,7 +164,15 @@
             }
         }
         .catalogo {
-            grid-template-columns: map-get($map: $cantidadColumnas, $key: dos);
+            grid-template-columns: map-get($map: $cantidadColumnas, $key: una);
+            &__prod {
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 65vw;
+                    height: 65vw;
+                }
+            }
         }
         .home {
             &__destacados {
@@ -168,6 +186,11 @@
                     height: 220px;
                 }
             }
+            &__img {
+                img {
+                    height: 35vh;
+                }
+            }
         }
         /*Estilado para Footer*/
         .pie {
@@ -176,7 +199,7 @@
                 flex-direction: column;
                 li {
                     font-weight: bold;
-                    font-size: 0.7rem;
+                    font-size: 0.8rem;
                     letter-spacing: 1px;
                     padding-bottom: 5px;
                 }
@@ -200,13 +223,13 @@
                 align-items: center;
                 iframe {
                     width: 80vw;
-                    height: 70vh;
+                    height: 70vw;
                 }
             }
             &__frente {
                 img {
                     width: 90vw;
-                    height: 40vh;
+                    height: 40vw;
                 }
             }
         }
@@ -216,7 +239,6 @@
                 height: 200px;
             }
             p {
-                font-size: 1.1rem;
                 padding-top: 7px;
             }
         }
