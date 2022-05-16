@@ -221,14 +221,17 @@
         }
         /*Estilado para Ubicacion*/
         .ubi {
-            &__nos p {
-                font-size: 0.8rem;
+            &__nos {
+                p {
+                    text-align: center;
+                    font-size: 0.8rem;
+                }
             }
             &__mapa {
                 align-items: center;
                 iframe {
-                    width: 90vw;
-                    height: 90vw;
+                    width: 67vw;
+                    height: 67vw;
                 }
             }
             &__frente {

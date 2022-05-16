@@ -841,6 +841,7 @@ html {
   }
   /*Estilado para Ubicacion*/
   .ubi__nos p {
+    text-align: center;
     font-size: 0.8rem;
   }
   .ubi__mapa {
@@ -849,8 +850,8 @@ html {
             align-items: center;
   }
   .ubi__mapa iframe {
-    width: 90vw;
-    height: 90vw;
+    width: 67vw;
+    height: 67vw;
   }
   .ubi__frente img {
     width: 90vw;
