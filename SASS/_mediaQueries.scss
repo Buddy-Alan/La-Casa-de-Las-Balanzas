@@ -215,7 +215,17 @@
             }
         }
         /*Estilado para Ubicacion*/
+        .ratio-21x9 {
+            height: 100vw;
+        }
         .ubi {
+            align-items: center;
+            &__mapa {
+                iframe {
+                    width: 80vw;
+                    height: 90vw;
+                }
+            }
             &__nos {
                 display: grid;
                 grid-template-columns: 0.6fr;
