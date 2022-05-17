@@ -20,13 +20,8 @@
         }
         .ubi {
             &__mapa {
-                width: 600px;
-                height: 400px;
                 justify-self: center;
-                iframe {
-                    width: 70%;
-                    height: 100%;
-                }
+                justify-content: center;
             }
             &__nos p {
                 font-size: 100%;
@@ -229,13 +224,6 @@
                     text-align: center;
                     font-size: 0.8rem;
                     text-overflow: inherit;
-                }
-            }
-            &__mapa {
-                align-items: center;
-                iframe {
-                    width: 90vw;
-                    height: 68vw;
                 }
             }
             &__frente {

@@ -524,8 +524,8 @@ html {
 }
 
 .ubi__mapa iframe {
-  width: 100vh;
-  height: 30vw;
+  width: 80vw;
+  height: 42vw;
   padding-bottom: 10px;
 }
 
@@ -618,14 +618,11 @@ html {
     height: 290px;
   }
   .ubi__mapa {
-    width: 600px;
-    height: 400px;
     -ms-grid-column-align: center;
         justify-self: center;
-  }
-  .ubi__mapa iframe {
-    width: 70%;
-    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .ubi__nos p {
     font-size: 100%;
@@ -853,15 +850,6 @@ html {
     text-align: center;
     font-size: 0.8rem;
     text-overflow: inherit;
-  }
-  .ubi__mapa {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .ubi__mapa iframe {
-    width: 90vw;
-    height: 68vw;
   }
   .ubi__frente img {
     width: 90vw;
