@@ -222,16 +222,19 @@
         /*Estilado para Ubicacion*/
         .ubi {
             &__nos {
+                display: grid;
+                grid-template-columns: 0.6fr;
+                justify-content: center;
                 p {
                     text-align: center;
                     font-size: 0.8rem;
+                    text-overflow: inherit;
                 }
             }
             &__mapa {
-                align-items: center;
                 iframe {
-                    width: 67vw;
-                    height: 67vw;
+                    width: 70vw;
+                    height: 68vw;
                 }
             }
             &__frente {
