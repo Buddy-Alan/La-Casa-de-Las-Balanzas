@@ -850,17 +850,13 @@ html {
     height: 90vw;
   }
   .ubi__nos {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 0.6fr;
-        grid-template-columns: 0.6fr;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .ubi__nos p {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-overflow: inherit;
   }
   .ubi__frente img {

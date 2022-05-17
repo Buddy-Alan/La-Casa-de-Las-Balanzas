@@ -227,12 +227,10 @@
                 }
             }
             &__nos {
-                display: grid;
-                grid-template-columns: 0.6fr;
                 justify-content: center;
                 p {
                     text-align: center;
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                     text-overflow: inherit;
                 }
             }
